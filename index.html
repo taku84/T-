@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オリジナルTシャツ販売</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>オリジナルTシャツショップ</h1>
+        <nav>
+            <a href="#about">商品について</a>
+            <a href="#products">商品一覧</a>
+            <a href="#contact">お問い合わせ</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>商品について</h2>
+        <p>私たちのTシャツはユニークなデザインと高品質の素材を使用しています。</p>
+    </section>
+
+    <section id="products">
+        <h2>商品一覧</h2>
+        <div class="product">
+            <img src="tshirt1.jpg" alt="Tシャツ1">
+            <h3>デザイン1</h3>
+            <p>価格: ¥3,000</p>
+            <button onclick="addToCart('デザイン1')">カートに追加</button>
+        </div>
+        <div class="product">
+            <img src="tshirt2.jpg" alt="Tシャツ2">
+            <h3>デザイン2</h3>
+            <p>価格: ¥3,500</p>
+            <button onclick="addToCart('デザイン2')">カートに追加</button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>お問い合わせ</h2>
+        <form>
+            <label for="name">名前:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">メールアドレス:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">メッセージ:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">送信</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 オリジナルTシャツショップ</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
