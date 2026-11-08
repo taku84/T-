@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>素材差し込みリスト｜TKselect（制作用）</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/site-config.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="./">TK<span>select</span></a>
+    <nav class="site-nav" aria-label="メイン" style="display:block;position:static;padding:0;border:0;background:none">
+      <ul style="flex-direction:row;gap:20px"><li><a href="./">トップ</a></li><li><a href="products/vacuum-backpack.html">商品LP</a></li></ul>
+    </nav>
+  </div>
+</header>
+<main class="section" style="padding-top:48px">
+  <div class="container">
+    <p class="eyebrow">For Production</p>
+    <h1 class="section-title">画像・動画 差し込みリスト</h1>
+    <p class="section-lead">この一覧は <code>assets/js/site-config.js</code> の <code>media</code> から自動生成しています。撮影した素材を <code>assets/img/</code>・<code>assets/video/</code> に置き、該当IDの <code>src</code> にパスを書くと、全ページの枠が実画像に置き換わります。</p>
+    <ul class="note mt-s" style="padding-left:1.2em">
+      <li>AI生成画像やCGを「実際のTKselect商品」として掲載しないこと。商品写真・動画は必ずサンプル／量産品の実物で撮影する。</li>
+      <li>画像はWebP（またはJPEG品質80前後）、長辺は推奨サイズ以内、1枚300KB程度を目安に書き出す。</li>
+      <li>IMG-04／IMG-05（圧縮前後）は三脚固定・同一画角・同一衣類量で撮影し、トリミングや拡大率を変えない。</li>
+      <li>動画はMP4（H.264）・音声なしでも内容が伝わる字幕付き。早送りがある場合は画面内に表記する。</li>
+    </ul>
+    <div class="table-scroll mt-m">
+      <table class="guide-table">
+        <thead><tr><th>ID</th><th>内容／使用箇所</th><th>推奨サイズ・比率</th><th>撮影内容</th><th>状態</th></tr></thead>
+        <tbody data-media-guide></tbody>
+      </table>
+    </div>
+    <p class="note mt-m">OGP画像（SNSシェア用）：OGP-01（トップ）／OGP-02（商品LP） 1200×630px。各HTMLの <code>og:image</code> を差し替え。</p>
+  </div>
+</main>
+</body>
+</html>
